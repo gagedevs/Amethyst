@@ -1,0 +1,17 @@
+run = ["node", "index.js"]
+hidden = [".config"]
+language = "nodejs"
+
+[nix]
+channel = "stable-21_11"
+
+[env]
+replit_repl_url = "https://$REPL_SLUG.$REPL_OWNER.repl.co"
+
+[[hints]]
+regex = "signal: terminated"
+message = "Process was killed by user (you pressed the stop button)"
+
+[[hints]]
+regex = "signal: interrupt"
+message = "Process was killed by user (you pressed 'CTRL+C'? If you were meaning to copy something, secondary click on the output and press copy)"
